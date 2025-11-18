@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
@@ -27,7 +27,19 @@ interface Lesson {
   };
 }
 
-const lessons: Lesson[] = [
+export interface LessonData {
+  id: string;
+  title: string;
+  description: string;
+  topic: string;
+  difficulty: 'beginner' | 'intermediate' | 'advanced';
+  content: {
+    explanation: string;
+    example: string;
+  };
+}
+
+export const lessons: Lesson[] = [
   {
     id: 'variables-1',
     title: 'Introduction to Variables',

@@ -1,10 +1,13 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
 import { ProgressDashboard } from './components/progress-dashboard';
 import { LessonsView } from './components/lessons-view';
 import { ChallengesView } from './components/challenges-view';
+import { CareerView } from './components/career-view';
 import { ProfileView } from './components/profile-view';
-import { Code, Trophy, User, BookOpen } from 'lucide-react';
+import { ChatbotWidget } from './components/chatbot-widget';
+import { Code, Trophy, User, BookOpen, Briefcase } from 'lucide-react';
+import { Profile } from './services/career-data';
 
 export interface UserProgress {
   level: number;
@@ -28,6 +31,22 @@ export default function App() {
     badges: [],
     characterType: 'wizard'
   });
+
+  // Career profile state
+  const [careerProfiles, setCareerProfiles] = useState<Profile[]>([]);
+  const [selectedCareerProfileIndex, setSelectedCareerProfileIndex] = useState<number | null>(null);
+
+  const addCareerProfile = (profile: Profile) => {
+    setCareerProfiles(prev => [...prev, profile]);
+  };
+
+  const selectCareerProfile = (index: number | null) => {
+    setSelectedCareerProfileIndex(index);
+  };
+
+  const selectedCareerProfile = selectedCareerProfileIndex !== null 
+    ? careerProfiles[selectedCareerProfileIndex] 
+    : null;
 
   const addXP = (amount: number) => {
     setUserProgress(prev => {
@@ -85,13 +104,13 @@ export default function App() {
       <div className="container mx-auto p-4 md:p-8 max-w-7xl">
         <div className="mb-8">
           <h1 className="text-4xl mb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">
-            CodeQuest Academy
+            DebugMe
           </h1>
           <p className="text-gray-600">Learn coding through adventure and exploration!</p>
         </div>
 
         <Tabs defaultValue="dashboard" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-4 lg:w-auto lg:inline-grid">
+          <TabsList className="flex w-full flex-nowrap lg:w-auto">
             <TabsTrigger value="dashboard" className="flex items-center gap-2">
               <BookOpen className="w-4 h-4" />
               <span className="hidden sm:inline">Dashboard</span>
@@ -103,6 +122,10 @@ export default function App() {
             <TabsTrigger value="challenges" className="flex items-center gap-2">
               <Trophy className="w-4 h-4" />
               <span className="hidden sm:inline">Challenges</span>
+            </TabsTrigger>
+            <TabsTrigger value="career" className="flex items-center gap-2">
+              <Briefcase className="w-4 h-4" />
+              <span className="hidden sm:inline">Career</span>
             </TabsTrigger>
             <TabsTrigger value="profile" className="flex items-center gap-2">
               <User className="w-4 h-4" />
@@ -130,11 +153,24 @@ export default function App() {
             />
           </TabsContent>
 
+          <TabsContent value="career" className="space-y-6">
+            <CareerView 
+              profiles={careerProfiles}
+              selectedProfileIndex={selectedCareerProfileIndex}
+              onAddProfile={addCareerProfile}
+              onSelectProfile={selectCareerProfile}
+            />
+          </TabsContent>
+
           <TabsContent value="profile" className="space-y-6">
             <ProfileView userProgress={userProgress} />
           </TabsContent>
         </Tabs>
       </div>
+      <ChatbotWidget 
+        userProgress={userProgress} 
+        selectedCareerProfile={selectedCareerProfile}
+      />
     </div>
   );
 }

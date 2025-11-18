@@ -187,3 +187,21 @@
 html {
   font-size: var(--font-size);
 }
+
+/* Purple slider styling for career view */
+.slider-purple [data-slot="slider-track"] {
+  background-color: var(--color-purple-200) !important;
+}
+
+.slider-purple [data-slot="slider-range"] {
+  background-color: var(--color-purple-500) !important;
+}
+
+.slider-purple [data-slot="slider-thumb"] {
+  border-color: var(--color-purple-500) !important;
+  background-color: var(--color-white) !important;
+}
+
+.slider-purple [data-slot="slider-thumb"]:focus-visible {
+  --tw-ring-color: var(--color-purple-500);
+}
