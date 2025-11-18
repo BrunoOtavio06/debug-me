@@ -1,243 +1,243 @@
-# DebugMe - Educational Coding Game App
+# DebugMe - Aplicativo Educacional de Jogo de Programação
 
-**DebugMe** is an interactive, gamified web application designed to teach programming through adventure and exploration. The app combines structured learning paths, hands-on coding challenges, career guidance, and an AI-powered tutoring chatbot to create a comprehensive learning experience.
+**DebugMe** é uma aplicação web interativa e gamificada projetada para ensinar programação através de aventura e exploração. O aplicativo combina trilhas de aprendizado estruturadas, desafios práticos de programação, orientação de carreira e um chatbot tutor alimentado por IA para criar uma experiência de aprendizado abrangente.
 
-The original design is available at [Figma](https://www.figma.com/design/V787j6as39BywMlgrzuaEr/Educational-Coding-Game-App).
+O design original está disponível em [Figma](https://www.figma.com/design/V787j6as39BywMlgrzuaEr/Educational-Coding-Game-App).
 
-## 🎯 Overview
+## 🎯 Visão Geral
 
-DebugMe transforms learning to code into an engaging game-like experience. Users progress through levels by completing lessons and challenges, earning XP, unlocking achievements, and receiving personalized career guidance based on their skills and interests.
+O DebugMe transforma o aprendizado de programação em uma experiência envolvente semelhante a um jogo. Os usuários progridem através de níveis completando lições e desafios, ganhando XP, desbloqueando conquistas e recebendo orientação de carreira personalizada com base em suas habilidades e interesses.
 
-## ✨ Features
+## ✨ Funcionalidades
 
-### 📊 Progress Dashboard
-- **Level System**: Progress through levels by earning XP from completed activities
-- **XP Tracking**: Visual progress bars showing XP earned and required for next level
-- **Streak Counter**: Track daily learning streaks to maintain motivation
-- **Character Cards**: Visual representation of your learning journey
-- **Quick Stats**: Overview of lessons completed, challenges solved, badges earned, and current rank
+### 📊 Painel de Progresso
+- **Sistema de Níveis**: Progrida através de níveis ganhando XP de atividades completadas
+- **Rastreamento de XP**: Barras de progresso visuais mostrando XP ganho e necessário para o próximo nível
+- **Contador de Sequência**: Acompanhe sequências diárias de aprendizado para manter a motivação
+- **Cartas de Personagem**: Representação visual da sua jornada de aprendizado
+- **Estatísticas Rápidas**: Visão geral de lições completadas, desafios resolvidos, emblemas conquistados e classificação atual
 
-### 📚 Interactive Lessons
-- **Structured Learning Path**: Progressive lessons covering fundamental programming concepts
-- **Topics Covered**: Variables, Functions, Conditionals, Loops, Arrays, and more
-- **Difficulty Levels**: Beginner, Intermediate, and Advanced lessons
-- **Content Includes**:
-  - Clear explanations of programming concepts
-  - Code examples with syntax highlighting
-  - Interactive quizzes to test understanding
-  - XP rewards for completion
-- **Level Gating**: Lessons unlock as you progress, maintaining appropriate difficulty curve
+### 📚 Lições Interativas
+- **Trilha de Aprendizado Estruturada**: Lições progressivas cobrindo conceitos fundamentais de programação
+- **Tópicos Abordados**: Variáveis, Funções, Condicionais, Loops, Arrays e mais
+- **Níveis de Dificuldade**: Lições para Iniciantes, Intermediárias e Avançadas
+- **Conteúdo Inclui**:
+  - Explicações claras de conceitos de programação
+  - Exemplos de código com destaque de sintaxe
+  - Questionários interativos para testar compreensão
+  - Recompensas de XP por conclusão
+- **Bloqueio por Nível**: Lições são desbloqueadas conforme você progride, mantendo uma curva de dificuldade apropriada
 
-### 🏆 Coding Challenges
-- **Hands-On Practice**: Real coding challenges with starter code and test cases
-- **Multiple Difficulties**: Easy, Medium, and Hard challenges
-- **Features**:
-  - Problem descriptions and requirements
-  - Starter code templates
-  - Test cases to validate solutions
-  - Hints for guidance
-  - Solution explanations
-- **Topics**: Functions, Conditionals, Arrays & Loops, Strings, Logic problems (including classic FizzBuzz)
+### 🏆 Desafios de Programação
+- **Prática Prática**: Desafios reais de programação com código inicial e casos de teste
+- **Múltiplas Dificuldades**: Desafios Fáceis, Médios e Difíceis
+- **Recursos**:
+  - Descrições de problemas e requisitos
+  - Modelos de código inicial
+  - Casos de teste para validar soluções
+  - Dicas para orientação
+  - Explicações de soluções
+- **Tópicos**: Funções, Condicionais, Arrays e Loops, Strings, Problemas de Lógica (incluindo o clássico FizzBuzz)
 
-### 💼 Career Guidance
-- **Profile Creation**: Create personalized profiles by rating your skills (1-5 scale) across 10 competencies:
-  - Technical: Programming Logic, Analytical Thinking, Artificial Intelligence
-  - Behavioral: Creativity, Collaboration, Adaptability, Communication, Problem Solving, Curiosity, Leadership
-- **Career Matching**: Get compatibility scores for 6 tech careers:
-  - Data Scientist
-  - Software Engineer
-  - UX Designer
-  - Cybersecurity Specialist
-  - Machine Learning Engineer
-  - Tech Entrepreneur
-- **Learning Path Recommendations**: Personalized suggestions for skill improvement
-- **Automation Risk Analysis**: Understand automation risks for different careers with:
-  - Risk level assessment (low/medium/high)
-  - Task-by-task breakdown
-  - Adaptation strategies
-  - Complementary skills to develop
+### 💼 Orientação de Carreira
+- **Criação de Perfil**: Crie perfis personalizados avaliando suas habilidades (escala de 1-5) em 10 competências:
+  - Técnicas: Lógica de Programação, Pensamento Analítico, Inteligência Artificial
+  - Comportamentais: Criatividade, Colaboração, Adaptabilidade, Comunicação, Resolução de Problemas, Curiosidade, Liderança
+- **Compatibilidade de Carreira**: Obtenha pontuações de compatibilidade para 6 carreiras em tecnologia:
+  - Cientista de Dados
+  - Engenheiro de Software
+  - Designer UX
+  - Especialista em Cibersegurança
+  - Engenheiro de Machine Learning
+  - Empreendedor em Tecnologia
+- **Recomendações de Trilha de Aprendizado**: Sugestões personalizadas para melhoria de habilidades
+- **Análise de Risco de Automação**: Entenda os riscos de automação para diferentes carreiras com:
+  - Avaliação de nível de risco (baixo/médio/alto)
+  - Análise tarefa por tarefa
+  - Estratégias de adaptação
+  - Habilidades complementares para desenvolver
 
-### 🤖 AI-Powered Chatbot (BuggyChat)
-- **Dual-Purpose Assistant**: 
-  - **Programming Tutor**: Answers questions about completed lessons, teaches new concepts, provides code examples
-  - **Career Advisor**: Provides guidance on career paths, upskilling, reskilling, job interviews, and automation risk
-- **Context-Aware**: Uses your completed lessons and career profile to provide personalized responses
-- **Features**:
-  - Markdown support with syntax highlighting
-  - Conversation history
-  - Clear chat functionality
-  - Responsive design with smooth scrolling
+### 🤖 Chatbot Alimentado por IA (BuggyChat)
+- **Assistente de Dupla Função**: 
+  - **Tutor de Programação**: Responde perguntas sobre lições completadas, ensina novos conceitos, fornece exemplos de código
+  - **Consultor de Carreira**: Fornece orientação sobre trilhas de carreira, aprimoramento de habilidades, requalificação, entrevistas de emprego e risco de automação
+- **Consciente do Contexto**: Usa suas lições completadas e perfil de carreira para fornecer respostas personalizadas
+- **Recursos**:
+  - Suporte a Markdown com destaque de sintaxe
+  - Histórico de conversas
+  - Funcionalidade de limpar chat
+  - Design responsivo com rolagem suave
 
-### 👤 Profile & Achievements
-- **Comprehensive Stats**: Track total XP, current level, lessons/challenges completed, streaks, and badges
-- **Badge System**: Earn badges for milestones:
-  - First Steps: Complete your first lesson
-  - Learning Streak: Complete 5 lessons
-  - Challenge Master: Complete 3 challenges
-  - Rising Star: Reach Level 5
-  - Perfectionist: Get 100% on any quiz
-  - Dedicated Learner: Maintain a 7-day streak
-- **Progress Visualization**: Visual progress bars and achievement displays
+### 👤 Perfil e Conquistas
+- **Estatísticas Abrangentes**: Acompanhe XP total, nível atual, lições/desafios completados, sequências e emblemas
+- **Sistema de Emblemas**: Ganhe emblemas por marcos:
+  - Primeiros Passos: Complete sua primeira lição
+  - Sequência de Aprendizado: Complete 5 lições
+  - Mestre de Desafios: Complete 3 desafios
+  - Estrela em Ascensão: Alcance o Nível 5
+  - Perfeccionista: Obtenha 100% em qualquer questionário
+  - Aprendiz Dedicado: Mantenha uma sequência de 7 dias
+- **Visualização de Progresso**: Barras de progresso visuais e exibições de conquistas
 
-## 🛠️ Tech Stack
+## 🛠️ Stack Tecnológico
 
-- **Frontend Framework**: React 18.3 with TypeScript
-- **Build Tool**: Vite 6.3
-- **Styling**: Tailwind CSS
-- **UI Components**: Radix UI (comprehensive component library)
-- **AI Integration**: LangChain with OpenAI (GPT-4o-mini)
-- **Code Highlighting**: react-syntax-highlighter
-- **Markdown Rendering**: react-markdown
-- **Charts**: Recharts
-- **Icons**: Lucide React
+- **Framework Frontend**: React 18.3 com TypeScript
+- **Ferramenta de Build**: Vite 6.3
+- **Estilização**: Tailwind CSS
+- **Componentes UI**: Radix UI (biblioteca abrangente de componentes)
+- **Integração de IA**: LangChain com OpenAI (GPT-4o-mini)
+- **Destaque de Código**: react-syntax-highlighter
+- **Renderização de Markdown**: react-markdown
+- **Gráficos**: Recharts
+- **Ícones**: Lucide React
 
-## 📋 Prerequisites
+## 📋 Pré-requisitos
 
-Before setting up the project, ensure you have:
+Antes de configurar o projeto, certifique-se de ter:
 
-- **Node.js** (version 18 or higher recommended)
-- **npm** (comes with Node.js)
-- **OpenAI API Key** (for chatbot functionality)
+- **Node.js** (versão 18 ou superior recomendada)
+- **npm** (vem com Node.js)
+- **Chave de API OpenAI** (para funcionalidade do chatbot)
 
-## 🚀 Local Setup Instructions
+## 🚀 Instruções de Configuração Local
 
-### 1. Clone the Repository
+### 1. Clonar o Repositório
 
 ```bash
 git clone <repository-url>
 cd debug-me
 ```
 
-### 2. Install Dependencies
+### 2. Instalar Dependências
 
 ```bash
 npm install
 ```
 
-This will install all required dependencies including React, Vite, Tailwind CSS, Radix UI components, LangChain, and other packages.
+Isso instalará todas as dependências necessárias, incluindo React, Vite, Tailwind CSS, componentes Radix UI, LangChain e outros pacotes.
 
-### 3. Configure Environment Variables
+### 3. Configurar Variáveis de Ambiente
 
-Create a `.env` file in the root directory:
+Crie um arquivo `.env` no diretório raiz:
 
 ```bash
 touch .env
 ```
 
-Add your OpenAI API key to the `.env` file:
+Adicione sua chave de API OpenAI ao arquivo `.env`:
 
 ```env
-VITE_OPENAI_API_KEY=your_openai_api_key_here
+VITE_OPENAI_API_KEY=sua_chave_api_openai_aqui
 ```
 
-**Note**: The chatbot feature requires a valid OpenAI API key. Without it, the chatbot will not function. You can get an API key from [OpenAI's website](https://platform.openai.com/api-keys).
+**Nota**: A funcionalidade do chatbot requer uma chave de API OpenAI válida. Sem ela, o chatbot não funcionará. Você pode obter uma chave de API no [site da OpenAI](https://platform.openai.com/api-keys).
 
-### 4. Start the Development Server
+### 4. Iniciar o Servidor de Desenvolvimento
 
 ```bash
 npm run dev
 ```
 
-The development server will start on `http://localhost:3000` (as configured in `vite.config.ts`). The browser should automatically open to the application.
+O servidor de desenvolvimento será iniciado em `http://localhost:3000` (conforme configurado em `vite.config.ts`). O navegador deve abrir automaticamente para a aplicação.
 
-### 5. Build for Production
+### 5. Build para Produção
 
-To create a production build:
+Para criar um build de produção:
 
 ```bash
 npm run build
 ```
 
-The built files will be in the `build/` directory.
+Os arquivos compilados estarão no diretório `build/`.
 
-## 📁 Project Structure
+## 📁 Estrutura do Projeto
 
 ```
 debug-me/
-├── public/              # Static assets (images, etc.)
+├── public/              # Assets estáticos (imagens, etc.)
 ├── src/
-│   ├── components/      # React components
-│   │   ├── ui/         # Reusable UI components (Radix UI based)
+│   ├── components/      # Componentes React
+│   │   ├── ui/         # Componentes UI reutilizáveis (baseados em Radix UI)
 │   │   ├── career-view.tsx
 │   │   ├── challenges-view.tsx
 │   │   ├── chatbot-widget.tsx
 │   │   ├── lessons-view.tsx
 │   │   ├── profile-view.tsx
 │   │   └── progress-dashboard.tsx
-│   ├── services/        # Business logic and API services
+│   ├── services/        # Lógica de negócios e serviços de API
 │   │   ├── career-data.ts
 │   │   └── chatbot.ts
-│   ├── styles/          # Global styles
-│   ├── App.tsx          # Main application component
-│   └── main.tsx         # Application entry point
-├── index.html           # HTML template
-├── package.json         # Dependencies and scripts
-├── vite.config.ts       # Vite configuration
-└── README.md            # This file
+│   ├── styles/          # Estilos globais
+│   ├── App.tsx          # Componente principal da aplicação
+│   └── main.tsx         # Ponto de entrada da aplicação
+├── index.html           # Template HTML
+├── package.json         # Dependências e scripts
+├── vite.config.ts       # Configuração do Vite
+└── README.md            # Este arquivo
 ```
 
-## 🎮 How to Use
+## 🎮 Como Usar
 
-1. **Start Learning**: Navigate to the "Lessons" tab and begin with beginner-level lessons
-2. **Complete Challenges**: Test your skills in the "Challenges" tab
-3. **Track Progress**: Monitor your XP, level, and achievements in the "Dashboard"
-4. **Get Career Guidance**: Create a profile in the "Career" tab to receive personalized recommendations
-5. **Ask Questions**: Use the BuggyChat widget (bottom-right) to get help with programming or career questions
-6. **View Profile**: Check your achievements and stats in the "Profile" tab
+1. **Começar a Aprender**: Navegue até a aba "Lições" e comece com lições de nível iniciante
+2. **Completar Desafios**: Teste suas habilidades na aba "Desafios"
+3. **Acompanhar Progresso**: Monitore seu XP, nível e conquistas no "Painel"
+4. **Obter Orientação de Carreira**: Crie um perfil na aba "Carreira" para receber recomendações personalizadas
+5. **Fazer Perguntas**: Use o widget BuggyChat (canto inferior direito) para obter ajuda com perguntas sobre programação ou carreira
+6. **Ver Perfil**: Verifique suas conquistas e estatísticas na aba "Perfil"
 
-## 🔧 Configuration
+## 🔧 Configuração
 
-### Development Server Port
+### Porta do Servidor de Desenvolvimento
 
-The default port is 3000. To change it, modify `vite.config.ts`:
+A porta padrão é 3000. Para alterá-la, modifique `vite.config.ts`:
 
 ```typescript
 server: {
-  port: 3000,  // Change to your preferred port
+  port: 3000,  // Altere para sua porta preferida
   open: true,
 }
 ```
 
-### OpenAI Model
+### Modelo OpenAI
 
-The chatbot uses GPT-4o-mini by default. To change the model, edit `src/services/chatbot.ts`:
+O chatbot usa GPT-4o-mini por padrão. Para alterar o modelo, edite `src/services/chatbot.ts`:
 
 ```typescript
 return new ChatOpenAI({
-  modelName: 'gpt-4o-mini',  // Change to your preferred model
+  modelName: 'gpt-4o-mini',  // Altere para seu modelo preferido
   temperature: 0.7,
   openAIApiKey: apiKey,
 });
 ```
 
-## 🐛 Troubleshooting
+## 🐛 Solução de Problemas
 
-### Chatbot Not Working
-- Ensure `VITE_OPENAI_API_KEY` is set in your `.env` file
-- Verify your OpenAI API key is valid and has sufficient credits
-- Check the browser console for error messages
+### Chatbot Não Está Funcionando
+- Certifique-se de que `VITE_OPENAI_API_KEY` está definida em seu arquivo `.env`
+- Verifique se sua chave de API OpenAI é válida e tem créditos suficientes
+- Verifique o console do navegador para mensagens de erro
 
-### Port Already in Use
-- Change the port in `vite.config.ts` or stop the process using port 3000
+### Porta Já em Uso
+- Altere a porta em `vite.config.ts` ou pare o processo usando a porta 3000
 
-### Build Errors
-- Clear `node_modules` and reinstall: `rm -rf node_modules && npm install`
-- Ensure you're using Node.js 18 or higher
+### Erros de Build
+- Limpe `node_modules` e reinstale: `rm -rf node_modules && npm install`
+- Certifique-se de estar usando Node.js 18 ou superior
 
-## 📝 Notes
+## 📝 Notas
 
-- All user progress is stored in browser state (localStorage not implemented in current version)
-- The chatbot requires an active internet connection and valid OpenAI API key
-- Career recommendations are based on the compatibility scoring algorithm defined in the codebase
+- Todo o progresso do usuário é armazenado no estado do navegador (localStorage não implementado na versão atual)
+- O chatbot requer uma conexão ativa com a internet e uma chave de API OpenAI válida
+- As recomendações de carreira são baseadas no algoritmo de pontuação de compatibilidade definido no código
 
-## 🤝 Contributing
+## 🤝 Contribuindo
 
-This is an educational project based on a Figma design. Contributions and improvements are welcome!
+Este é um projeto educacional baseado em um design do Figma. Contribuições e melhorias são bem-vindas!
 
-## 📄 License
+## 📄 Licença
 
-This project is for educational purposes. Please refer to the original Figma design for attribution.
+Este projeto é para fins educacionais. Por favor, consulte o design original do Figma para atribuição.
 
 ---
 
-**Happy Coding! 🚀**
+**Feliz Programação! 🚀**
